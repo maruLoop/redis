@@ -201,6 +201,10 @@ struct redisCommand redisCommandTable[] = {
      "read-only fast @string",
      0,NULL,1,1,1,0,0,0},
 
+    {"please_get",pleaseGetCommand,2,
+     "read-only fast @string",
+     0,NULL,1,1,1,0,0,0},
+
     {"getex",getexCommand,-2,
      "write fast @string",
      0,NULL,1,1,1,0,0,0},
