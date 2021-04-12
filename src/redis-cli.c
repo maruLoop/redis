@@ -1566,6 +1566,8 @@ static int parseOptions(int argc, char **argv) {
             config.rdb_filename = argv[++i];
         } else if (!strcmp(argv[i],"--pipe")) {
             config.pipe_mode = 1;
+        } else if (!strcmp(argv[i],"--please")) {
+            config.pipe_mode = 1;
         } else if (!strcmp(argv[i],"--pipe-timeout") && !lastarg) {
             config.pipe_timeout = atoi(argv[++i]);
         } else if (!strcmp(argv[i],"--bigkeys")) {
