@@ -296,6 +296,12 @@ int getGenericCommand(client *c) {
     return C_OK;
 }
 
+
+void pleaseGetCommand(client *c) {
+    // 寝たり何かする
+    getGenericCommand(c);
+}
+
 void getCommand(client *c) {
     getGenericCommand(c);
 }
